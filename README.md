@@ -8,9 +8,8 @@ $ curl https://install.meteor.com/ | sh
 $ sudo npm install -g gagarin
 ```
 
-#how to
-change to branch step0
-```
-$ git checkout step0
-```
-this will also update this README
+## Step0
+
+- add Restivus
+- test for a Restivus Object on the Server and Client
+- Create a Restivus Object
