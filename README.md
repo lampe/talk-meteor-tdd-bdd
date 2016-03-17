@@ -14,8 +14,7 @@ $ ./chromedriver
 $ gagarin -B -m -c
 ```
 
-## Step0
+## Step1
 
-- add Restivus
-- test for a Restivus Object on the Server and Client
-- Create a Restivus Object
+- write a test for a array with accepted moves and a object with winning Moves.
+- write so much code that the test are passed
