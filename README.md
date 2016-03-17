@@ -14,8 +14,6 @@ $ ./chromedriver
 $ gagarin -B -m -c
 ```
 
-## Step2
+## Step3
 
-- write a test for a function that return a random moves
-- write a test for a function that returns if a move is valid or not
-- write so much code that the test are passed
+this is the finished code!
