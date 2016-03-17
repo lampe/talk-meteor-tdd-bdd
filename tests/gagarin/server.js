@@ -37,4 +37,33 @@ describe('Rock Paper Scissors Rest Api - Server', function () {
       });
     });
   });
+  describe('- RoPaSc functions', function () {
+    it('randoMmove should have be function', function () {
+      return server.execute(function () {
+        var randomMove = RoPaSc.getRandomMove();
+        expect(randomMove).to.be.a.function;
+      });
+    });
+    it('randoMmove should return a random move', function () {
+      return server.execute(function () {
+        var randomMove = RoPaSc.getRandomMove();
+        assert.include(RoPaSc.allowedMoves, randomMove);
+      });
+    });
+    it('isValidMove with paper should be a valid move', function () {
+      return server.execute(function () {
+        expect(RoPaSc.isValidMove("paper")).to.be.true;
+      });
+    });
+    it('isValidMove with rock should be a valid move', function () {
+      return server.execute(function () {
+        expect(RoPaSc.isValidMove("rock")).to.be.true;
+      });
+    });
+    it('isValidMove with scissors should be a valid move', function () {
+      return server.execute(function () {
+        expect(RoPaSc.isValidMove("scissors")).to.be.true;
+      });
+    });
+  });
 });
